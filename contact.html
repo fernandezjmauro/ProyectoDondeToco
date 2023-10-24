@@ -30,38 +30,29 @@
       </div>
     </section>
   </header>
-  
-  <main>
-    <div class="offers-section">
-      <aside class="offers-bar">
-        <h3>Estilos:</h3>
-        <a href="">Rock</a>
-        <a href="">Tango</a>
-        <a href="">Salsa</a>
-      </aside>
 
-      <section class="section-container">
-        <h3>ESPACIOS</h3>
-        <div class="cards-container">
-          <!-- ACÁ VAN CADA CARD -->
-          <div class="card-box">
-            <img src="img/BATACAZO-LOGO-1.png" alt="Batacazo Cultural">
-            <div class="card-box-info offer-30">
-              <p>CC Batacazo</p>
-              <a href="#" class="btn">Contactar</a>
-            </div>
-          </div>
-          <div class="card-box">
-            <img src="img/lapaz.jpg" alt="La Paz Arriba">
-            <div class="card-box-info offer-30">
-              <p>CC La Paz Arriba</p>
-              <a href="#" class="btn">Contactar</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+  <main class="main-contacto">
+      <form action="" method="POST" class="items-form">
+      <h3>CONTACTO</h3>
+      <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      </div>
+      <div>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="correo@mail.com" required>
+      </div>
+      <br>
+      <div>
+          <textarea name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
+      </div>
+
+      <div>
+          <button type="submit" class="btn">Registrarse</button>
+      </div>
+      </form>
   </main>
+
   <footer>
     <section>
 
@@ -71,5 +62,3 @@
     </section>
   </footer>
 </body>
-
-</html>

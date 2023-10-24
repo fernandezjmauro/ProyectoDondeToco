@@ -1,0 +1,344 @@
+:root{
+  font-size: 15px;
+  --color-primary: #152636;
+  --color-primary-light: #27475d;
+  --color-secondary: #FFE870;
+  --color-secondary-light: #F24C3D;
+  --color-tertiary: #511F73;
+  --color-tertiary-light: #F29727;
+  --color-font: #FFF;
+  --color-font-2: #000;
+  --color-special: linear-gradient(90deg, #F29727 0%, #511F73 100%);
+}
+
+/* lista de nuevos colores
+#FFE870
+#511F73
+#F2BE22
+#F29727
+#F24C3D
+font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Shadows Into Light', cursive; */
+
+body{
+  background-color: var(--color-secondary);
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+  
+}
+
+header{
+  background-color: var(--color-primary);
+  padding: 0.3rem;
+  min-width: auto;
+}
+
+header .header-buttons{
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.1rem solid var(--color-secondary);
+}
+
+.btn{
+  margin: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+  transition: filter 0.3s ease-in-out;
+  background-color: var(--color-tertiary);
+  color: var(--color-font);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn:hover{
+  background-color: var(--color-tertiary-light);
+}
+
+header .header-menu{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 70%;
+  font-family: 'Dela Gothic One', sans-serif;
+  font-size: 1.2rem;
+}
+
+.header-options{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+header a .logo{
+  width: 12rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: filter 0.3s ease-in-out;
+  align-items: center;
+}
+header a .logo:hover{
+  filter: drop-shadow(0.1rem 0 0.8rem #ffffff6e);
+}
+
+header a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+}
+
+header a:hover{
+  color: white;
+}
+
+header a.selected{
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.2rem;
+}
+
+main{
+  display: grid;
+  min-height: 100%;
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+.offers-bar{
+  box-sizing: border-box;
+  flex-direction: column;
+  columns: 1;
+  /* width: min-content; */
+  justify-content: center;
+  align-items: center;
+}
+
+main div aside{
+  box-sizing: border-box;
+  columns: 1fr;
+}
+
+.main-contacto{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+form{
+  justify-content: center;
+  line-height: 1.5;
+  padding: 4rem;
+ }
+
+
+.items-form{
+  display: grid;
+  box-sizing: border-box;
+  height: 500px;
+  width: 700px;
+}
+
+.items-form input{
+  width: 300px;
+}
+
+.section-container{
+  box-sizing: border-box;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro-container{
+  display: flex;
+  align-content: center;
+  width: auto;
+  margin-top: 5rem;
+  background-color: var(--color-secondary);
+}
+
+.offers-section{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  /* CAMBIEN TODA ESTA PARTE POR UN GRID PARA PODER USAR MEDIAS QUERIES (MAURO)*/
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 5% 95%;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  height: auto;
+  background-color: var(--color-secondary);
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+/* Aline el contenedor de las card games para poder hacerlo responsive(MAURO)*/
+  justify-content: center;
+}
+
+.card-box{
+  color: var(--color-font);
+  width: 18rem;
+  height: 11rem;
+  box-shadow: 0 0 0.4rem 0.3rem  #00000055;
+  border-radius: 0.2rem;
+  position: relative;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+.card-box:hover{
+  transform: scale(1.05);
+  filter:brightness(1.2);
+}
+
+.card-box img{
+  width: 18rem;
+  height: 11rem;
+  border-radius: 0.2rem;
+}
+
+.card-box .card-box-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 0 0 0.2rem 0.2rem;
+  background: var(--color-special);
+}
+
+.card-box .card-box-info.offer-30::before{
+  content: "8/10";
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: 0.1rem;
+  background-color: green;
+  color: rgb(145, 255, 0);
+}
+
+
+.space-class{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 20rem;
+  width: 30rem;
+  height: auto;
+}
+
+.space-class p{
+  display: flex;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+
+.encabezado{
+  width: 400px;
+  height: 10rem;
+
+}
+
+.slider-container {
+  display: flex;
+  margin: 1rem;
+  width: 80%;
+  height: 80%;
+  overflow-x: scroll;
+
+  scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+
+  scroll-snap-align: center;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+footer{
+  background-color: #152636;
+  position: static;
+  bottom: 0;
+  height: 5rem;
+}
+
+@media screen and (max-width: 576px){
+  
+  header .header-menu{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .header-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header a .logo{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: filter 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  .offers-section{
+    box-sizing: border-box;
+    width: 100%;
+    /* CAMBIEN TODA ESTA PARTE POR UN GRID PARA PODER USAR MEDIAS QUERIES (MAURO)*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 30fr;
+
+    /* flex-direction: row; */
+    background-color: var(--color-secondary);
+  }
+  
+  .offers-bar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: 0.1rem;
+  }
+
+  .cards-container{
+    width: 100%;
+  }
+
+  .section-container{
+    margin-top: 1rem;
+  }
+}

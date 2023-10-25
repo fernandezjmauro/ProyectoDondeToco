@@ -129,6 +129,7 @@ main div aside{
 
 .main-contacto{
   display: grid;
+  width: 100%;
   align-content: center;
   justify-content: center;
   margin: 1rem;

@@ -239,7 +239,7 @@ form{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 0.5rem;
   min-height: 20rem;
   width: 25rem;
   height: auto;

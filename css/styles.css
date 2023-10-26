@@ -290,7 +290,8 @@ form{
 }
 
 footer{ 
-  position: relative;
+  position: absolute;
+  display: grid;
   bottom: 0rem;
   width: 100%;
 }
@@ -383,20 +384,21 @@ footer{
   }
   
   .items-form{
-    display: grid;
-    grid-column: auto;
-
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
     box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
   }
 
   .main-deform{
-    display: grid;
+    width: 100%;
     box-sizing: border-box;
-    align-content: center;
+    display: grid;
     justify-content: center;
-    scale: 0.7;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+    
   }
 
   .space-class{
@@ -412,4 +414,11 @@ footer{
   }
 
   p{margin:1rem}
+
+  footer{ 
+    position: relative;
+    display: grid;
+    bottom: 0rem;
+    width: 100%;
+  }
 }

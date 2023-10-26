@@ -250,7 +250,7 @@ form{
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
-  width: 25rem;
+  width: 35rem;
   height: auto;
 }
 
@@ -284,6 +284,8 @@ form{
 
   scroll-snap-align: center;
 }
+
+iframe{width: 90%;}
 
 #map {
 	height: 500px;

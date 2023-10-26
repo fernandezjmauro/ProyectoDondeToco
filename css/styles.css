@@ -239,7 +239,7 @@ form{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  margin: 0.5rem;
   width: 25rem;
   height: auto;
 }
@@ -370,4 +370,14 @@ footer{
     width: 700px;
   }
 
+  .space-class{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    width: 25rem;
+    height: auto;
+  }
 }

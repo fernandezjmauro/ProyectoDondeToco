@@ -384,21 +384,19 @@ footer{
   }
   
   .items-form{
-    width: 100%;
     max-width: 600px;
     height: 100%;
     box-sizing: border-box;
   }
 
   .main-deform{
-    width: 100%;
     box-sizing: border-box;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     height: 100%;
-    
+    width: 100%;
   }
 
   .space-class{

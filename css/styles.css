@@ -134,6 +134,15 @@ main div aside{
   justify-content: center;
 }
 
+.main-deform{
+  display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+}
+
 form{
   justify-content: center;
   line-height: 1;
@@ -355,7 +364,6 @@ footer{
     height: 90%;
     align-content: center;
     justify-content: center;
-
   }
 
   #map {
@@ -375,13 +383,20 @@ footer{
   }
   
   .items-form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: auto;
+
     box-sizing: border-box;
-   
-    margin: 10rem;
     align-items: center;
     justify-content: center;
+  }
+
+  .main-deform{
+    display: grid;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    scale: 0.7;
   }
 
   .space-class{

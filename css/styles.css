@@ -351,17 +351,25 @@ footer{
   .main-contacto{
     display: grid;
     width: 100%;
-    height: 100%;
+    height: 90%;
     align-content: center;
     justify-content: center;
-    margin: 1rem;
+
   }
+
+  #map {
+    height: 500px;
+    width: 90%;}
   
   form{
     justify-content: center;
     line-height: 1.5;
    }
   
+  .encabezado{
+   width: 100%;
+   height: 10rem;
+  }
   
   .items-form{
     display: grid;
@@ -375,9 +383,10 @@ footer{
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    margin: 0.5rem;
-    width: 25rem;
+    
+    width: 90%;
     height: auto;
   }
 }

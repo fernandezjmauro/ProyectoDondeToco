@@ -257,7 +257,7 @@ form{
 .space-class p{
   display: flex;
   box-sizing: border-box;
-  width: auto;
+  width: 90%;
   height: auto;
 }
 
@@ -410,7 +410,7 @@ footer{
     justify-items: center;
     justify-content: center;
     margin: 1rem;
-
+	  width:90%;
     height: auto;
   }
 

@@ -150,6 +150,9 @@ form{
   margin: 1rem;
  }
 
+input:focus{
+  border: 2px solid 
+}
 
 .items-form{
   display: grid;
@@ -250,14 +253,14 @@ form{
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
-  width: 35rem;
+  width: 25rem;
   height: auto;
 }
 
 .space-class p{
   display: flex;
   box-sizing: border-box;
-  width: 90%;
+  width: auto;
   height: auto;
 }
 
@@ -410,7 +413,7 @@ footer{
     justify-items: center;
     justify-content: center;
     margin: 1rem;
-	  width:90%;
+
     height: auto;
   }
 

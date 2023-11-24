@@ -19,6 +19,7 @@ const getVenues = async () => {
     lng: +venue[5],
     address: venue[6]
   }))
+  return venueData
 }
 
 /**
@@ -50,7 +51,7 @@ const listVenues = (venues) => {
  * @param Object venue 
  */
 const showVenueMap = (venue) => {
-  var coord = {lat: venue.lat, lng: venue.long};
+  var coord = {lat: venue.lat, lng: venue.lng};
   var map = new google.maps.Map(document.getElementById('map'),{
     zoom: 10,
     center: coord
@@ -65,9 +66,7 @@ const getVenueById = async (id) => {
   const venues = await getVenues()
 
   // buscamos el objeto que tiene el id que recibimos por url
-  const venue = venues.find(venue => venue[0] === id)
-
-  return venue
+  return venues.find(venue => venue.id === id)
 }
 
 /**
@@ -90,9 +89,8 @@ const showVenueDetails = async () => {
     </div>
     <div class="col-md-6">
       <h2>${venue.name}</h2>
-      <p>${venue.desc}</p>
+      <p>${venue.description}</p>
       <p>${venue.address}</p>
-      <a href="contact.html" class="btn">Contactar</a>
     </div>
   `
   showVenueMap(venue)

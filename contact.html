@@ -7,11 +7,14 @@
   <title>Bienvenidos a BAndana</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="/img/calendario.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -33,28 +36,27 @@
   </header>
 
   <main class="main-deform">
-    <form name="formulario" action="" method="get" class="items-form">
+    <form id="contact_form" name="formulario" action="" method="get" class="items-form">
       <h3>CONTACTO</h3>
       <br>
       <div>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="Nombre-de-Usuario" name="nombre" placeholder="Nombre">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre_de_usuario" name="nombre" placeholder="Nombre">
       </div>
       <br>
       <div>
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo-electronico" name="correo" placeholder="correo@mail.com">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="email" name="correo" placeholder="correo@mail.com">
       </div>
       <br>
       <div>
-          <textarea name="mensaje" id="mensaje" cols="60" rows="10"></textarea>
+        <textarea name="mensaje" id="mensaje" cols="60" rows="10"></textarea>
       </div>
-
       <div>
-          <button id="btn" type="submit" class="btn"> Contactar</button>
+        <button id="btn" type="submit" class="btn"> Contactar</button>
       </div>
-
-      </form>
+    </form>
+    <ul id="errors"></ul>
   </main>
 
   <footer>
@@ -62,4 +64,5 @@
 
     </section>
   </footer>
+  <script src="js/form.js"></script>
 </body>

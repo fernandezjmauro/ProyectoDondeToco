@@ -24,18 +24,20 @@ const validateForm = (e) => {
     }
     // validamos el mensaje
     const message = document.getElementById("mensaje")
-
+    // si la longitud del mensaje es menor a 10 caracteres agregamos un error
     if(message.value.length < 10) {
         err.push("El mensaje debe tener al menos 10 caracteres")
         message.classList.add("is-invalid")
     }
-    
+
+    // si hay errores, los mostramos y evitamos que el form se envíe
     if (err.length > 0) {
         e.preventDefault()
         showErrors(err)
     } 
 }
 
+// muestra los errores en el DOM
 const showErrors = (err) => {
     const errorsList = document.getElementById("errors")
     errorsList.innerHTML = ""
@@ -46,6 +48,7 @@ const showErrors = (err) => {
     })
 }
 
+// valida el email con una expresión regular
 const validateEmail = (email) => {
     return String(email)
       .toLowerCase()

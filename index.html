@@ -42,29 +42,13 @@
 
       <section class="section-container">
         <h3>ESPACIOS</h3>
-        <div class="cards-container">
+        <div id="venues" class="cards-container">
           <!-- ACÁ VAN CADA CARD -->
-        <a href="spacepage.html" style="color: white;">
-          <div class="card-box">
-            <img src="img/BATACAZO-LOGO-1.png" alt="Batacazo Cultural">
-            <div class="card-box-info offer-30">
-              <p>CC Batacazo</p>
-              <a href="spacepage.html" class="btn">Contactar</a>
-            </div>
-          </div>
-        </a>
-        <a href="spacepage2.html" style="color: white;">
-          <div class="card-box">
-            <img src="img/lapaz.jpg" alt="La Paz Arriba">
-            <div class="card-box-info offer-30">
-              <p>CC La Paz Arriba</p>
-              <a href="spacepage.html" class="btn">Contactar</a>
-            </div>
-          </div>
-        </a>
+        
         </div>
       </section>
     </div>
+    <div id="venues"></div>
   </main>
   <footer>
 
@@ -72,7 +56,13 @@
 
     </section>
   </footer>
-  
+  <script src="js/venues.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", async (e) => {
+  const venues = await getVenues()
+  listVenues(venues)
+})
+</script>
 </body>
 
 </html>

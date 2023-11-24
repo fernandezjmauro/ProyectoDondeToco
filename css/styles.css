@@ -308,7 +308,20 @@ footer{
   height: 5rem;
 
 }
-
+ul#errors {
+  list-style: none;
+  color: red;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+ul#errors li {
+  margin: 0;
+  padding: 0;
+}
+.is-invalid {
+  border: 1px solid red;
+}
 @media screen and (max-width: 576px){
   
   header .header-menu{
@@ -426,18 +439,5 @@ footer{
     width: 100%;
   }
 
-  ul#errors {
-    list-style: none;
-    color: red;
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-  }
-  ul#errors li {
-    margin: 0;
-    padding: 0;
-  }
-  .is-invalid {
-    border: 1px solid red;
-  }
+ 
 }

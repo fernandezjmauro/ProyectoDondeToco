@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenidos a BAndana</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/img/calendario.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Indie+Flower&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <section class="header-buttons">
+      <a href="" class="btn">Registrate aquí</a>
+      <a href="" class="btn">Iniciar sesión</a>
+    </section>
+    <section class="header-menu">
+      <a href="index.html">
+        <img src="img/LOGO.png" alt="" class="logo">
+      </a>
+      <div class="header-options">
+        <a href="index.html">Espacios</a>
+        <a href="#">Artistas</a>
+        <a href="contact.html">Contactanos</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="main-contacto">
+    <div class="space-class">
+        <div id="venue"></div>
+        <div id="map"></div>
+    </div>
+  </main>
+
+  <footer style="position: relative;">
+    <section>
+
+    </section>
+    <section class="footer-details">
+
+    </section>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+  <script src="js/venues.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", async (e) => {
+        showVenueDetails()
+    })
+  </script>
+</body>
